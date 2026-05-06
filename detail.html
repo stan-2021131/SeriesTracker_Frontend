@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle Serie</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <h1 class="site-title">SeriesTracker</h1>
+        <div class="header-actions">
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="form.html"><button class="add-button">Agregar</button></a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+
+        <!-- PORTADA -->
+        <div class="cover-container">
+            <div id="cover" class="cover"></div>
+        </div>
+
+        <!-- PERFIL -->
+        <div class="image-section">
+            <img id="image" class="principal-img" src="" alt="portada">
+
+            <div class="title-section">
+                <h2 id="title"></h2>
+                <p id="rating">⭐ 0</p>
+            </div>
+        </div>
+
+        <!-- DETALLES -->
+        <div class="details-card">
+
+            <div class="details-body">
+
+                <!-- INFO IZQUIERDA -->
+                <div class="details-info">
+                    <p><strong>Sinopsis:</strong></p>
+                    <p id="sinopsis"></p>
+
+                    <p><strong>Episodios:</strong> <span id="episodios"></span></p>
+                    <p><strong>País:</strong> <span id="pais"></span></p>
+                    <p><strong>Género:</strong> <span id="genero"></span></p>
+
+                    <!-- ACCIONES -->
+                    <div class="actions">
+                        <button id="edit-btn">Editar</button>
+                        <button id="delete-btn">Eliminar</button>
+                    </div>
+                </div>
+
+                <!-- RATING DERECHA -->
+                <div class="rating-panel">
+                    <p class="rating-label">Calificar serie</p>
+                    <div id="stars" class="stars">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                    <button id="rate-btn" class="rate-button">Calificar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>SeriesTracker - 2026</p>
+        <div class="creador">
+            <p>Creado por: Sergio Estuardo Tan Coromac</p>
+            <p>Carnet: 24759</p>
+            <p>Curso: Sistemas y tecnologías web</p>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/detail.js"></script>
+
+</body>
+
+</html>
