@@ -44,7 +44,7 @@ SeriesTracker_Frontend/
 
 ---
 
-## ⚙️ Cómo correr el proyecto localmente
+## Cómo correr el proyecto localmente
 
 El frontend es puro HTML/CSS/JS estático, por lo que **no requiere instalación** y se encuentra desplegado con GitHub Pages.
 
@@ -54,7 +54,7 @@ Sin embargo, puedes abrir `index.html` directamente en el navegador, aunque algu
 
 ---
 
-## 🔌 Configuración de la URL del backend
+## Configuración de la URL del backend
 
 La URL base del backend se encuentra en `js/api.js`:
 
@@ -68,14 +68,14 @@ Cámbiala según el entorno donde esté corriendo el backend (local o producció
 
 ---
 
-## 🌍 CORS
+## CORS
 
-Cors es un sistema de seguridad que evita que clientes no autorizados puedan acceder al API. Con esto el servidor puede mantenerse seguro y dejar que solo clientes autorizados puedan acceder a sus recursos.
+CORS es una política de seguridad del navegador que restringe las peticiones entre distintos orígenes (por ejemplo, frontend y backend). Para permitir la comunicación, el servidor debe habilitar explícitamente estos accesos. Esto no protege completamente al API, pero sí ayuda a llevar mejor control de las solicitudes realizadas por el navegador.
 
 
 ---
 
-## 🚀 Funcionalidades implementadas
+## Funcionalidades implementadas
 
 | Funcionalidad | Descripción |
 |---|---|
@@ -92,7 +92,7 @@ Cors es un sistema de seguridad que evita que clientes no autorizados puedan acc
 
 ---
 
-## 🏗️ Arquitectura del cliente
+## Arquitectura del cliente
 
 El cliente está organizado en archivos con responsabilidades claras y separadas:
 
@@ -103,14 +103,20 @@ El cliente está organizado en archivos con responsabilidades claras y separadas
 
 ---
 
-## ✅ Challenges implementados
-
+## Challenges implementados
+ - [x] Spec de OpenAPI/Swagger escrita y precisa (el contrato de la API en YAML o JSON)
+ - [x] Swagger UI corriendo y siendo servido desde el backend (no solo el archivo)
+ - [x] Códigos HTTP correctos en toda la API (201 al crear, 204 al eliminar, 404 si no existe, 400 en input inválido, etc.)
+ - [x] Validación server-side con respuestas de error en JSON descriptivas
+ - [x] Paginación en GET /series con parámetros ?page= y ?limit=
+ - [x] Búsqueda por nombre con ?q=
+ - [x] Ordenamiento con ?sort= y ?order=asc|desc
 - [x] Sistema de rating (tabla propia, endpoints REST, visible en el cliente)
 - [x] Subida de imágenes (multipart/form-data, límite ~1 MB)
 
 ---
 
-## 💭 Reflexión
+## Reflexión
 
 Pocas veces he utilizado html y js puro. Ya que siempre me habían enseñado a usar frameworks como react. Así que que me resulta interesante como mediante la manipulación del DOM podemos lograr resultados más complejos en nuestras páginas sin necesidad de estructuras complejas.
 
@@ -118,7 +124,7 @@ Esto me resultaría extremadamente útil en proyectos personales donde no hay co
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Sergio Estuardo Tan Coromac** — Carnet 24759  
 Curso: Sistemas y Tecnologías Web — 2026
