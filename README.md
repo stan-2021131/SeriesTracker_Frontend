@@ -5,7 +5,7 @@ Cliente web para gestionar y calificar series de televisión. Construido con **H
 > **Repositorio del Backend:** https://github.com/stan-2021131/SeriesTracker_Backend
 > **Despliegue de backend:** https://seriestracker-backend.onrender.com
 > **Repositorio del Frontend:** https://github.com/stan-2021131/SeriesTracker_Frontend
-> **Aplicación en producción:** [_enlace al deploy_]
+> **Aplicación en producción:** (https://stan-2021131.github.io/SeriesTracker_Frontend/)
 
 ---
 
