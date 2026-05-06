@@ -3,6 +3,8 @@
 Cliente web para gestionar y calificar series de televisión. Construido con **HTML, CSS y JavaScript Vanilla**, consume la API REST del backend mediante `fetch()`.
 
 > **Repositorio del Backend:** https://github.com/stan-2021131/SeriesTracker_Backend
+> **Despliegue de backend:** https://seriestracker-backend.onrender.com
+> **Repositorio del Frontend:** https://github.com/stan-2021131/SeriesTracker_Frontend
 > **Aplicación en producción:** [_enlace al deploy_]
 
 ---
@@ -44,11 +46,11 @@ SeriesTracker_Frontend/
 
 ## ⚙️ Cómo correr el proyecto localmente
 
-El frontend es puro HTML/CSS/JS estático, por lo que **no requiere instalación**.
+El frontend es puro HTML/CSS/JS estático, por lo que **no requiere instalación** y se encuentra desplegado con GitHub Pages.
 
 ### Abrir directamente
 
-Puedes abrir `index.html` directamente en el navegador, aunque algunas peticiones `fetch()` pueden fallar por restricciones de `file://`.
+Sin embargo, puedes abrir `index.html` directamente en el navegador, aunque algunas peticiones `fetch()` pueden fallar por restricciones de `file://`.
 
 ---
 

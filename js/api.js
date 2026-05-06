@@ -1,5 +1,5 @@
 const CONFIG = {
-    API_URL: "http://localhost:3005"
+    API_URL: "https://seriestracker-backend.onrender.com"
 }
 
 async function apiGet(endpoint) {
