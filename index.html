@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeriesTracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="site-header">
+        <h1 class="site-title">SeriesTracker</h1>
+        <div class="header-actions">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar" class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+            <a href="form.html"><button class="add-button">Agregar</button></a>
+        </div>
+    </header>
+
+    <!--Contenido Principal-->
+    <main id="series-list" class="main-content">
+        <!--Controles de orden y busqueda-->
+        <div class="controls">
+            <div class="control-group">
+                <label>Ordenar por:</label>
+                <select id="sort">
+                    <option value="id">ID</option>
+                    <option value="titulo">Título</option>
+                    <option value="episodios">Episodios</option>
+                    <option value="fecha_creacion">Fecha</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Orden:</label>
+                <select id="order">
+                    <option value="asc">Asc</option>
+                    <option value="desc">Desc</option>
+                </select>
+            </div>
+        </div>
+        <!--Contenedor de series-->
+        <div id="series-container" class="series-container"></div>
+
+        <!--Controles de paginación-->
+        <div class="controls-paginacion">
+            <button id="prev-page">Anterior</button>
+            <span id="page-info">Página 1</span>
+            <button id="next-page">Siguiente</button>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer">
+        <p>SeriesTracker - 2026</p>
+        <div id="creador" class="creador">
+            <p>Creado por: Sergio Estuardo Tan Coromac</p>
+            <p>Carnet: 24759</p>
+            <p>Curso: Sistemas y tecnologías web</p>
+        </div>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/list.js"></script>
+</body>
+
+</html>
