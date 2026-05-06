@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <h1 class="site-title">SeriesTracker</h1>
+        <div class="header-actions">
+            <a href="index.html"><button>Inicio</button></a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- FORMULARIO -->
+        <div class="form-container">
+
+            <div class="form-header">
+                <h2 id="form-title">Agregar Nueva Serie</h2>
+                <p id="form-subtitle">Completa los datos para agregar una serie</p>
+            </div>
+
+            <div class="form-body">
+
+                <form id="series-form">
+
+                    <div class="input-group">
+                        <label for="imagen">Imagen (Tamaño máximo 1MB)</label>
+                        <input type="file" id="image" accept="image/*">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="title">Título</label>
+                        <input type="text" id="title" placeholder="Ej. Game of Thrones" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="sinopsis">Sinopsis</label>
+                        <textarea id="sinopsis" rows="4" placeholder="Sinopsis de la serie" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="episodios">Episodios</label>
+                            <input type="number" id="episodios" placeholder="Ej. 10" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="country">País de origen</label>
+                        <input type="text" id="country" placeholder="Ej. Estados Unidos" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="genre">Género</label>
+                        <input type="text" id="genre" placeholder="Ej. Fantasía, Drama" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Guardar</button>
+                        <button type="button" id="cancel-btn">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>SeriesTracker - 2026</p>
+        <div class="creador">
+            <p>Creado por: Sergio Estuardo Tan Coromac</p>
+            <p>Carnet: 24759</p>
+            <p>Curso: Sistemas y tecnologías web</p>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+
+</html>
